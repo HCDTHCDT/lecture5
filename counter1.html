@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            let counter = 0 ;
+            function count(){
+                counter++;
+                document.querySelector('#counter').innerHTML = counter;
+                //check with another initial value in innerHTML for ex. 90
+                if (counter % 10 === 0){
+                    //triple = for comparison
+                    alert(`Counter is at ${counter} !`)
+                    // ` not ' or " and check an unexisted variable ... nothing happens...no alert
+                }
+            }
+        </script>
+        <title>
+            My Website!
+        </title>
+    </head>
+    <body>
+        <h1 id="counter">0</h1>
+        <button onclick="count()">Click here!</button>
+    </body>
+</html>

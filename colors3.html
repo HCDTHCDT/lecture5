@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                document.querySelector('#color-change').onchange = function(){
+                    //why arrow function can not be used ?
+                    document.querySelector('#hello').style.color = this.value;
+                };
+            });
+        </script>
+        <title>My Website</title>
+    </head>
+    <body>
+        <h1 id="hello">Hello!</h1>
+        <select id="color-change">
+            <option value="black">black</option>
+            <option value="red">red</option>
+            <option value="green">green</option>
+            <option value="blue">blue</option>
+        </select>
+    </body>
+</html>
